@@ -8,6 +8,10 @@
 #include <fcntl.h>
 #include "Socket.hpp"
 
+#ifndef MSG_NOSIGNAL
+#define MSG_NOSIGNAL 0x4000
+#endif
+
 
 const uint8_t Socket::MAX_CONNECTIONS = 5;
 const uint32_t Socket::MAX_RECV_LEN = 2048;
