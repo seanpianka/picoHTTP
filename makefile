@@ -2,7 +2,7 @@
 # find /your/dir -type f -exec touch {} +
 CXX       := g++
 CXXSTD    := -std=c++11
-CXXFLAGS  := -Wall -Wextra
+CXXFLAGS  := -Wall -Wextra -O2
 
 SRCDIR    := src
 BUILDDIR  := build
